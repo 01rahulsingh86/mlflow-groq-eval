@@ -3,6 +3,7 @@ import mlflow.pyfunc
 from typing import List, Any
 from groq import Groq
 
+
 SYSTEM_DEFAULT = "You are a helpful assistant. Answer briefly and accurately."
 
 class GroqLLM(mlflow.pyfunc.PythonModel):

@@ -6,6 +6,19 @@ from tqdm import tqdm
 from metrics import exact_match, contains, token_f1
 from groq_pyfunc import GroqLLM
 
+# --- DagsHub setup (put this near the top) ---
+try:
+    from dagshub import init as dagshub_init
+    dagshub_init(
+        repo_owner="01rahulsingh86",          # <OWNER>
+        repo_name="mlflow-groq-eval",         # <REPO>
+        mlflow=True                           # configures MLflow tracking URI & creds
+    )
+except Exception as e:
+    print("DagsHub init skipped:", e)
+# --------------------------------------------
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dataset', type=str, required=True, help='CSV with columns: prompt, reference')
