@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/champ/Downloads/mlflow-groq-eval/mlruns/852045333675594180/91e0bc6a944f4453912aa817c55be0ca/artifacts
+end_time: 1757713667783
+entry_point_name: ''
+experiment_id: '852045333675594180'
+lifecycle_stage: active
+run_id: 91e0bc6a944f4453912aa817c55be0ca
+run_name: adaptable-zebra-753
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757713665779
+status: 3
+tags: []
+user_id: champ
