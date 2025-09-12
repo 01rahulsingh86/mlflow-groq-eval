@@ -62,4 +62,24 @@ except Exception as e:
 export GROQ_API_KEY="sk-..."
 python src/eval_runner.py --dataset data/eval.csv --experiment groq-eval-demo --output_dir runs/demo
 mlflow ui --port 5000
+
+export GROQ_API_KEY="sk-..."
+
+# Try with diff models
+
+# 8B
+export GROQ_MODEL="llama-3.1-8b-instant"
+python src/eval_runner.py --dataset data/eval.csv --experiment groq-eval --output_dir runs/8b
+
+# 70B
+export GROQ_MODEL="llama-3.1-70b-versatile"
+python src/eval_runner.py --dataset data/eval.csv --experiment groq-eval --output_dir runs/70b
+
+# Mixtral
+export GROQ_MODEL="mixtral-8x7b"
+python src/eval_runner.py --dataset data/eval.csv --experiment groq-eval --output_dir runs/mixtral
+
+
+
+
 ```
