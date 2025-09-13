@@ -100,5 +100,24 @@ More forgiving than exact match; penalizes missing/extra words.
 By default normalization is light; you can make it stricter (e.g., strip punctuation) in metrics.py to turn “Paris.” and “Paris” into a match for F1.
 
 
+# run llm as judge command
+python src/eval_runner.py \           
+  --dataset data/eval.csv \
+  --experiment groq-eval-demo \
+  --output_dir runs/with-judge-2 \
+  --temperature 0.0 \
+  --judge
+
+#run only tests
+pytest -q   
+
+#running with temperature 
+
+python src/eval_runner.py --dataset data/eval.csv --experiment groq-eval --output_dir runs/t02 --temperature 1
+
+#Grok Key Export to be done way before running anything
+export GROQ_API_KEY=""
+export GROQ_JUDGE_MODEL="
+
 
 ```
