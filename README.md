@@ -45,7 +45,10 @@ export MLFLOW_TRACKING_PASSWORD="<your_dagshub_access_token>"
 
 Edit src/eval_runner.py
 
+Tip: temperature=0.0 reduces randomness, which is best for consistent, comparable evaluations.
+
 Add this block near the imports, above where you call MLflow:
+
 
 # --- DagsHub setup (put this near the top) ---
 try:
@@ -79,6 +82,22 @@ python src/eval_runner.py --dataset data/eval.csv --experiment groq-eval --outpu
 export GROQ_MODEL="mixtral-8x7b"
 python src/eval_runner.py --dataset data/eval.csv --experiment groq-eval --output_dir runs/mixtral
 
+#Metric Defination
+Metric definitions (simple & fast)
+
+contains
+Fraction of rows where normalize(prediction) includes normalize(reference) as a substring.
+Useful for “did it say the key word/number somewhere?”
+
+exact_match
+Fraction of rows where normalized strings are exactly equal.
+Strict: good to detect perfectly formatted answers.
+
+token_f1
+Average F1 over token sets (word overlap).
+More forgiving than exact match; penalizes missing/extra words.
+
+By default normalization is light; you can make it stricter (e.g., strip punctuation) in metrics.py to turn “Paris.” and “Paris” into a match for F1.
 
 
 

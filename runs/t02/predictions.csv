@@ -1,0 +1,5 @@
+prompt,reference,prediction
+What is 2+2?,4,2 + 2 = 4.
+Name the capital of France.,Parisa,The capital of France is Paris.
+Reverse the string 'abc'.,abc,The reverse of 'abc' is 'cba'.
+Answer 'yes' if the sky is blue.,No,Yes.

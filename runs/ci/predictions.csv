@@ -1,0 +1,41 @@
+prompt,reference,prediction
+Return just the result of 15*3.,45,45
+What is 2+2? Return only the number.,4,4
+What is 10 divided by 4? Round to 2 decimals,2.50,10 divided by 4 is 2.5.
+Name the capital of France. Return only the city.,Paris,Paris.
+Name the capital of Japan. Return only the city.,Tokyo,Tokyo
+Reverse the string 'hello'.,olleh,The reverse of 'hello' is 'olleh'.
+Uppercase the word 'chatgpt'.,CHATGPT,CHATGPT
+Lowercase the word 'MiXeD'.,mixed,mixed
+How many letters are in 'banana'? Return only the number.,6,6
+Give the first three letters of 'elephant'.,ele,The first three letters of 'elephant' are 'e-l-e'.
+Is 'racecar' a palindrome? Answer yes or no.,yes,Yes.
+Extract the domain from 'https://www.openai.com/blog'. Return just the domain.,openai.com,openai.com
+"Sort this list alphabetically and return as a comma list: pear, apple, banana","apple, banana, pear","apple, banana, pear"
+Join the words 'blue' and 'sky' with a hyphen.,blue-sky,Blue-sky.
+Return JSON exactly with key 'a' and value 1.,"{\a\"":1}""","```json
+{
+  ""a"": 1
+}
+```"
+Extract only the digits from 'abc123def'.,123,The digits are: 1 2 3
+Remove vowels from 'computer'.,cmptr,cmptr.
+Plural of 'city'.,cities,The plural of 'city' is 'cities'.
+Give the antonym of 'hot' (one word).,cold,Cold.
+Convert 100 centimeters to meters. Return only the number.,1,1
+How many seconds are in 5 minutes? Return only the number.,300,300
+Reformat the date '12/31/2023' to YYYY-MM-DD.,2023-12-31,The date '12/31/2023' in YYYY-MM-DD format is
+Extract the country code from '+1-415-555-1234'. Return only the number.,1,+1
+Count the words in 'to be or not to be'. Return only the number.,6,6
+Which is larger: 0.5 or 0.05? Return the number.,0.5,0.5
+Is 17 a prime number? Answer yes or no.,yes,Yes.
+Return the first name from 'Ada Lovelace'.,Ada,Ada.
+Return the last 4 characters of 'ABCDEFGHIJ'.,GHIJ,The last 4 characters of 'ABCDEFGHIJ' are 'HIJ'.
+Remove all spaces from 'a b  c'.,abc,a b c becomes a b c -> a b c without spaces is 'abc
+Convert 32°F to °C. Round to 1 decimal and return only the number.,0.0,0.0
+Extract the file extension from 'report.pdf'.,pdf,The file extension is '.pdf'.
+"Return the third item from this list: red,green,blue,yellow",blue,The third item from the list is: blue.
+Convert 'Hello World' to snake_case.,hello_world,The 'Hello World' string in snake_case is 'hello_world'.
+Return the sum of the digits in 90210. Return only the number.,12,9 + 0 + 2 + 1 + 0 = 12
+Return the number of unique letters in 'Mississippi'. Return only the number.,4,8
+Give the ISO 3166-1 alpha-2 code for United States.,US,The ISO 3166-1 alpha-2 code for the United States is
